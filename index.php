@@ -12,7 +12,7 @@
     <canvas id="gameCanvas" width="550" height="550"></canvas>
   <div class="section"> 
     <div id="scoreNumber">0</div>
-    <div><button id="resetBtn">Reset</button></div>
+    <div><button id="resetButton">Reset</button></div>
   </div>  
   </div> 
 <script src="js/app.js"></script>

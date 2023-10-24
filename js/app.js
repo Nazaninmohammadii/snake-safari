@@ -1,7 +1,7 @@
 const gameCanvas = document.querySelector('#gameCanvas');
 const context = gameCanvas.getContext('2d');
 const scoreNumber = document.querySelector('#scoreNumber');
-const resetBtn = document.querySelector('#resetBtn');
+const resetButton = document.querySelector('#resetButton');
 const gameWidth = gameCanvas.width;
 const gameHeight =  gameCanvas.height;
 const canvasBackground = "#000";
@@ -23,7 +23,7 @@ let snake = [
 ];
 
 window.addEventListener('keydown', changeDirection);
-resetBtn.addEventListener('click', resetGame);
+resetButton.addEventListener('click', resetGame);
 
 gameStart();
 
@@ -138,21 +138,28 @@ function checkGameOver(){
             running = false;
             break;
         case (snake[0].y >= gameHeight):
-                running = false;
-                break;
+            running = false;
+            break;
     }
+    //if the snake collides with itself and stops the game if it does.
     for(const snakePart of snake.slice(1)) {
     if(snakePart.x == snake[0].x && snakePart.y == snake[0].y) {
+        //the snake has collided itself so the game is no longer running
         running = false;
-        break;
     }
-}
+    }   
 };
 
 function displayGameOver(){
-    context.fillStyle = "#9f241a";
+    context.fillStyle = "purple";
     context.font = "80px Pixelify Sans";
     context.textAlign = "center";
+
+    // Shadow color
+    context.shadowColor = 'rgba(245, 243, 81, 0.7)';
+    context.shadowBlur = 2; 
+    context.shadowOffsetX = 4; 
+    context.shadowOffsetY = 4;
     context.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
     running = false;
 };
