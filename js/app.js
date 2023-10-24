@@ -160,6 +160,7 @@ function displayGameOver(){
     context.shadowBlur = 2; 
     context.shadowOffsetX = 4; 
     context.shadowOffsetY = 4;
+    
     context.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
     running = false;
 };
