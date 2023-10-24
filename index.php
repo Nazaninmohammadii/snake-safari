@@ -11,7 +11,7 @@
   <h1>Snake Safari</h1>
 </div>   
   <div id="gameContainer">
-    <canvas id="gameCanvas" width="500" height="500"></canvas>
+    <canvas id="gameCanvas" width="550" height="550"></canvas>
   <div class="section"> 
     <div id="scoreNumber">0</div>
     <div><button id="resetBtn">Reset</button></div>
