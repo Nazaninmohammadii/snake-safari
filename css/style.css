@@ -4,9 +4,14 @@ body {
   background-color: black;
   overflow: hidden;
   font-family: 'Pixelify Sans', sans-serif;
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
 }
 
-.title h1{
+.title{
   font-size: 70px;
   text-align: center;
   color: #f5f351;
