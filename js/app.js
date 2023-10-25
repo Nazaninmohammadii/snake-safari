@@ -155,11 +155,11 @@ function displayGameOver(){
     context.font = "80px Pixelify Sans";
     context.textAlign = "center";
 
-    // Shadow color
-    context.shadowColor = 'rgba(245, 243, 81, 0.7)';
-    context.shadowBlur = 2; 
-    context.shadowOffsetX = 4; 
-    context.shadowOffsetY = 4;
+    // // Shadow color
+    // context.shadowColor = 'rgba(245, 243, 81, 0.7)';
+    // context.shadowBlur = 2; 
+    // context.shadowOffsetX = 4; 
+    // context.shadowOffsetY = 4;
     
     context.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
     running = false;
