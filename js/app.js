@@ -83,7 +83,7 @@ function moveSnake(){
         scoreNumber.textContent = score;
         createFood();
     } else {
-        //this will eleminate the tail anytime we move
+        //this will eliminate the tail anytime we move
         snake.pop();
     }     
 }; 
