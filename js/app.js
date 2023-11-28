@@ -162,6 +162,13 @@ function displayGameOver(){
     context.shadowOffsetY = 4;
     
     context.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
+
+    // Reset shadow properties
+    context.shadowColor = 'transparent';
+    context.shadowBlur = 0;
+    context.shadowOffsetX = 0;
+    context.shadowOffsetY = 0;
+    
     running = false;
 };
 
